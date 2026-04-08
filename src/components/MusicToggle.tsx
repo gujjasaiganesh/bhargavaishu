@@ -1,16 +1,28 @@
 import { useState, useEffect, useRef } from "react";
-import { Music, Music2 } from "lucide-react";
+import { Volume2, VolumeX } from "lucide-react";
 
 const MusicToggle = () => {
   const [isPlaying, setIsPlaying] = useState(false);
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
   useEffect(() => {
-    // Note: Most browsers block autoplay. User interaction is required.
-    // High-quality Indian Wedding Instrumental (Sitar/Flute)
-    audioRef.current = new Audio("https://www.soundhelix.com/examples/mp3/SoundHelix-Song-8.mp3"); // Using a placeholder, in production replace with shehnai.mp3
+    // Initialize audio with local Audio.mp3
+    audioRef.current = new Audio("/Audio.mp3");
     audioRef.current.loop = true;
     audioRef.current.volume = 0.15;
+
+    // Auto-play on component mount
+    const playAudio = async () => {
+      try {
+        await audioRef.current?.play();
+        setIsPlaying(true);
+      } catch (err) {
+        console.log("Autoplay blocked by browser. Click mute button to play.");
+      }
+    };
+
+    // Small delay to ensure audio is ready
+    setTimeout(playAudio, 500);
 
     return () => {
       if (audioRef.current) {
@@ -39,11 +51,11 @@ const MusicToggle = () => {
     >
       {isPlaying ? (
         <div className="relative">
-          <Music2 className="w-5 h-5 animate-pulse" />
+          <Volume2 className="w-5 h-5 animate-pulse" />
           <span className="absolute -top-1 -right-1 w-2 h-2 bg-gold rounded-full animate-ping"></span>
         </div>
       ) : (
-        <Music className="w-5 h-5 opacity-60" />
+        <VolumeX className="w-5 h-5 opacity-60" />
       )}
     </button>
   );

@@ -6,41 +6,43 @@
 
 @layer base {
   :root {
-    /* Vintage Editorial Sketchbook Palette */
-    --background: 35 30% 94%; /* Aged Archival Paper #F4F1EA */
-    --foreground: 215 25% 20%;   /* Ink Navy #24292E */
+    /* Premium Indian Wedding Palette */
+    --background: 35 40% 96%; /* Warm Ivory #F9F5F0 */
+    --foreground: 30 20% 15%;   /* Deep Brown #2A140A */
 
-    --card: 35 25% 92%;
-    --card-foreground: 215 25% 20%;
+    --primary: 30 80% 50%;    /* Royal Gold #D4A017 */
+    --primary-foreground: 35 40% 96%;
 
-    --popover: 35 30% 94%;
-    --popover-foreground: 215 25% 20%;
+    --secondary: 10 65% 35%;  /* Deep Maroon #8B2E2E */
+    --secondary-foreground: 35 40% 96%;
 
-    --primary: 215 20% 35%;    /* Muted Navy/Dusty Blue */
-    --primary-foreground: 35 30% 94%;
+    --accent: 100 65% 35%;    /* Emerald Green #228B22 */
+    --accent-foreground: 35 40% 96%;
 
-    --secondary: 35 15% 85%;  /* Faint Paper Grey */
-    --secondary-foreground: 215 20% 30%;
+    --card: 35 35% 94%;
+    --card-foreground: 30 20% 15%;
 
-    --muted: 215 10% 50%;        /* Graphite Grey */
-    --muted-foreground: 215 10% 50%;
+    --popover: 35 40% 96%;
+    --popover-foreground: 30 20% 15%;
 
-    --accent: 35 40% 88%;    /* Slightly warmer paper */
-    --accent-foreground: 215 30% 25%;
+    --muted: 30 10% 55%;
+    --muted-foreground: 30 10% 50%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 215 15% 80%;
-    --input: 215 15% 80%;
-    --ring: 215 20% 35%;
+    --border: 30 15% 85%;
+    --input: 30 15% 85%;
+    --ring: 30 80% 50%;
 
     --radius: 2rem;
 
-    /* Custom Accents */
-    --ink: 215 25% 20%;
-    --dusty-blue: 215 20% 45%;
-    --archival-paper: 35 30% 94%;
+    /* Premium Color Accents */
+    --gold: #D4A017;
+    --deep-maroon: #8B2E2E;
+    --emerald: #228B22;
+    --ivory: #F9F5F0;
+    --peach: #E3826E;
 
     --font-script: 'Pinyon Script', cursive;
     --font-handwritten: 'Mrs Saint Delafield', cursive;
@@ -60,7 +62,12 @@
   body {
     @apply bg-background text-foreground;
     font-family: var(--font-serif);
-    background-image: url("https://www.transparenttextures.com/patterns/natural-paper.png");
+    background: linear-gradient(135deg, #F9F5F0 0%, #FFF5E6 50%, #FBF3E6 100%);
+    background-attachment: fixed;
+    background-image: 
+      linear-gradient(135deg, #F9F5F0 0%, #FFF5E6 50%, #FBF3E6 100%),
+      radial-gradient(circle at 20% 50%, rgba(212, 160, 23, 0.03) 0%, transparent 50%),
+      radial-gradient(circle at 80% 80%, rgba(34, 139, 34, 0.02) 0%, transparent 50%);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     overflow-x: hidden;
@@ -75,6 +82,17 @@
     font-family: var(--font-serif);
     font-weight: 300;
     line-height: 1.2;
+    background: linear-gradient(135deg, rgba(212, 160, 23, 0.9) 0%, rgba(139, 46, 46, 0.9) 50%, rgba(34, 139, 34, 0.9) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Premium Dividers */
+  hr, .divider {
+    background: linear-gradient(90deg, transparent, rgba(212, 160, 23, 0.3), transparent);
+    border: none;
+    height: 1px;
   }
 
   /* Specific rules for Telugu text to handle vertical rhythm */
@@ -198,4 +216,85 @@
 
 .animate-scale-fade-in {
   animation: scale-fade-in 0.6s ease-out both;
+}
+
+/* Premium Gradient Text */
+.text-gradient-premium {
+  background: linear-gradient(135deg, rgba(212, 160, 23, 0.9) 0%, rgba(227, 130, 110, 0.9) 50%, rgba(34, 139, 34, 0.9) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Premium Shimmer Effect */
+.shimmer-premium {
+  background: linear-gradient(90deg, 
+    rgba(212, 160, 23, 0.5) 0%, 
+    rgba(255, 255, 255, 0.8) 50%, 
+    rgba(212, 160, 23, 0.5) 100%);
+  background-size: 200% 100%;
+  animation: shimmer-slide 3s infinite;
+}
+
+@keyframes shimmer-slide {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+/* Premium Glow Effect */
+.glow-premium {
+  text-shadow: 
+    0 0 10px rgba(212, 160, 23, 0.4),
+    0 0 20px rgba(227, 130, 110, 0.3),
+    0 0 30px rgba(34, 139, 34, 0.2);
+  animation: glow-pulse 2s ease-in-out infinite;
+}
+
+@keyframes glow-pulse {
+  0%, 100% { text-shadow: 0 0 10px rgba(212, 160, 23, 0.4), 0 0 20px rgba(227, 130, 110, 0.3), 0 0 30px rgba(34, 139, 34, 0.2); }
+  50% { text-shadow: 0 0 20px rgba(212, 160, 23, 0.6), 0 0 30px rgba(227, 130, 110, 0.5), 0 0 40px rgba(34, 139, 34, 0.3); }
+}
+
+/* Premium Borders and Dividers */
+.border-premium {
+  border-color: rgba(212, 160, 23, 0.3);
+}
+
+.divider-premium {
+  background: linear-gradient(90deg, transparent, rgba(212, 160, 23, 0.3), transparent);
+  height: 1px;
+}
+
+/* Premium Staggered Animation */
+.stagger-1 { animation-delay: 0.1s; }
+.stagger-2 { animation-delay: 0.2s; }
+.stagger-3 { animation-delay: 0.3s; }
+.stagger-4 { animation-delay: 0.4s; }
+.stagger-5 { animation-delay: 0.5s; }
+
+/* Premium Color Palette Classes */
+.text-gold-premium { color: rgba(212, 160, 23, 0.9); }
+.text-maroon-premium { color: rgba(139, 46, 46, 0.9); }
+.text-emerald-premium { color: rgba(34, 139, 34, 0.9); }
+.text-peach-premium { color: rgba(227, 130, 110, 0.9); }
+
+.bg-gold-light { background-color: rgba(212, 160, 23, 0.1); }
+.bg-maroon-light { background-color: rgba(139, 46, 46, 0.1); }
+.bg-emerald-light { background-color: rgba(34, 139, 34, 0.1); }
+.bg-peach-light { background-color: rgba(227, 130, 110, 0.1); }
+
+/* Premium Smooth Transitions */
+.transition-premium {
+  transition: all 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.transition-smooth {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Responsive Gradient Background */
+@supports (background: linear-gradient(to right, var(--gold), var(--emerald))) {
+  .gradient-radial {
+    background: radial-gradient(ellipse at center, rgba(212, 160, 23, 0.1) 0%, transparent 70%);
+  }
 }
