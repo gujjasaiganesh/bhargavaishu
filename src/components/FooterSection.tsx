@@ -46,6 +46,28 @@ const FooterSection = ({ lang }: FooterSectionProps) => {
             <div className="inline-block border border-ink/10 rounded-full px-6 sm:px-8 md:px-10 py-2 sm:py-2.5 md:py-3 font-cinzel text-[8px] sm:text-[9px] md:text-xs tracking-[0.25em] sm:tracking-[0.3em] md:tracking-[0.3em] uppercase text-ink/60 bg-ink/5 transition-all duration-500 hover:bg-ink/10 hover:border-ink/20 cursor-default">
               #BhargaVaishu
             </div>
+            
+            {/* Instagram Link */}
+            <a 
+              href="https://www.instagram.com/thebvstory_/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className={`group inline-flex items-center gap-2 sm:gap-3 transition-all duration-1000 delay-800 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}
+            >
+              <div className="relative">
+                {/* Instagram Logo Image */}
+                <img 
+                  src="/instagram.png" 
+                  alt="Instagram"
+                  className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 transition-all duration-500 group-hover:scale-110 object-contain"
+                />
+                {/* Subtle glow effect on hover */}
+                <div className="absolute inset-0 bg-gradient-to-r from-purple-500/20 via-pink-500/20 to-orange-500/20 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-500 blur-md scale-150"></div>
+              </div>
+              <span className="font-script text-lg sm:text-xl md:text-2xl text-ink/40 group-hover:text-ink/60 transition-all duration-500">
+                thebvstory_
+              </span>
+            </a>
           </div>
         </div>
 
