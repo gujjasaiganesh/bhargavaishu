@@ -318,7 +318,7 @@ const CurtainIntro = ({ onComplete }: CurtainIntroProps) => {
                 Welcome
               </p>
               <p className="font-playfair text-lg md:text-2xl text-white/90 italic font-light tracking-wide drop-shadow-md" style={{ textShadow: "0 2px 10px rgba(0, 0, 0, 0.4)" }}>
-                to our special celebration
+                to our special wedding
               </p>
             </div>
 

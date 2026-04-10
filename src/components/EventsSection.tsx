@@ -78,34 +78,35 @@ const EventsSection = ({ lang }: EventsSectionProps) => {
 
                 <div className="space-y-4 sm:space-y-6 md:space-y-8 text-ink/80 font-playfair text-sm sm:text-base md:text-xl leading-relaxed max-w-md mx-auto md:mx-0 font-light italic">
                   <div className="flex items-center justify-center md:justify-start gap-3 sm:gap-4 md:gap-6 group/item">
-                    <span className="text-base sm:text-lg md:text-xl opacity-50 italic font-serif">at</span>
                     <p className="tracking-wide font-light text-balance">{item.time}</p>
                   </div>
                   <div className="flex items-center justify-center md:justify-start gap-3 sm:gap-4 md:gap-6 group/item">
-                    <span className="text-base sm:text-lg md:text-xl opacity-50 italic font-handwritten">in</span>
+                    <span className="text-base sm:text-lg md:text-xl opacity-50 italic font-handwritten">at</span>
                     <p className="tracking-wide font-light underline underline-offset-8 decoration-ink/20 text-balance">{item.location}</p>
                   </div>
                   
                   {/* Attire Guide Section - Multi-font refine */}
                   {item.attire && (
                     <div className="pt-4 sm:pt-6 md:pt-8 space-y-3 sm:space-y-4 md:space-y-6">
-                      <div className="flex items-center justify-center md:justify-start gap-3 sm:gap-4">
-                        <div className="h-[0.5px] w-6 sm:w-8 bg-ink/30"></div>
-                        <span className="text-[9px] sm:text-[10px] md:text-xs tracking-[0.25em] sm:tracking-[0.3em] md:tracking-[0.4em] uppercase font-cinzel text-ink/60">
-                          {t(item.attire.label, lang)}
-                        </span>
-                      </div>
-                      <div className="flex flex-col md:flex-row items-center gap-3 sm:gap-4 md:gap-6">
-                        <p className="text-ink font-handwritten text-2xl sm:text-3xl md:text-4xl opacity-80 leading-none">{t(item.attire.description, lang)}</p>
-                        <div className="flex gap-3 md:gap-3">
-                          {item.attire.colors.map((color, idx) => (
-                            <div 
-                              key={idx} 
-                              className="w-6 h-6 sm:w-7 sm:h-7 md:w-6 md:h-6 rounded-full border border-ink/10 shadow-sm transition-all duration-500 hover:scale-125 hover:rotate-12"
-                              style={{ backgroundColor: color }}
-                              title={color}
-                            />
-                          ))}
+                      <div className="flex flex-col items-center gap-3 sm:gap-4 md:gap-6">
+                        <div className="text-center">
+                          <div className="h-[0.5px] w-6 sm:w-8 bg-ink/30 mx-auto mb-2"></div>
+                          <span className="text-[9px] sm:text-[10px] md:text-xs tracking-[0.25em] sm:tracking-[0.3em] md:tracking-[0.4em] uppercase font-cinzel text-ink/60">
+                            {t(item.attire.label, lang)}
+                          </span>
+                        </div>
+                        <div className="flex flex-col items-center gap-3 sm:gap-4 md:gap-6">
+                          <p className="text-ink font-handwritten text-2xl sm:text-3xl md:text-4xl opacity-80 leading-none text-center">{t(item.attire.description, lang)}</p>
+                          <div className="flex gap-3 md:gap-3">
+                            {item.attire.colors.map((color, idx) => (
+                              <div 
+                                key={idx} 
+                                className="w-6 h-6 sm:w-7 sm:h-7 md:w-6 md:h-6 rounded-full border border-ink/10 shadow-sm transition-all duration-500 hover:scale-125 hover:rotate-12"
+                                style={{ backgroundColor: color }}
+                                title={color}
+                              />
+                            ))}
+                          </div>
                         </div>
                       </div>
                     </div>

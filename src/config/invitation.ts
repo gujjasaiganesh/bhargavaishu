@@ -25,7 +25,7 @@ export const invitation = {
       te: "శ్రీరస్తు ✦ శుభమస్తు ✦ అవిఘ్నమస్తు",
     },
     message: {
-      en: "We solicit your gracious presence with family and friends on the auspicious occasion of the wedding ceremony of our children",
+      en: "We solicit your gracious presence with family and friends on the auspicious occasion of the wedding ceremony of",
       te: "మా పిల్లల వివాహ మహోత్సవ శుభ సందర్భంలో మీరు మీ కుటుంబ సభ్యులు మరియు స్నేహితులతో కలిసి విచ్చేసి మమ్మల్ని ఆశీర్వదించవలసిందిగా కోరుచున్నాము",
     },
     subtitle: {
@@ -64,7 +64,7 @@ export const invitation = {
         illustration: "/Sangeeth.png",
         mapsLink: "https://maps.app.goo.gl/3PrZ9JFr9zoR1Aj18?g_st=ic",
         attire: {
-          label: { en: "Dress Code", te: "డ్రెస్ కోడ్" },
+          label: { en: "Attire Guide", te: "డ్రెస్ కోడ్" },
           description: { en: "Dark & Blingy", te: "డార్క్ & బ్లింగీ" },
           colors: ["#1A1A1A", "#C0C0C0", "#FFD700"]
         }

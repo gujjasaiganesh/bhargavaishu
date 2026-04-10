@@ -88,7 +88,7 @@ const TempleBackgroundSection = ({ lang = "en" }: TempleBackgroundSectionProps) 
         >
           <p className="font-playfair text-lg md:text-2xl italic text-ink/80 font-light leading-relaxed px-4">
             {lang === "en"
-              ? "Two souls unite in the presence of divine grace, in a celebration of love, family, and eternal traditions."
+              ? "Two souls unite in the presence of divine grace, in a wedding of love, family, and eternal traditions."
               : "దేవతల ఆశీర్వాదం నుండి ఇద్దరు ఆత్మలు సంయోగం చెందుతారు, ప్రేమ, కుటుంబం మరియు శాశ్వత సంప్రదాయాల జరుపులో."}
           </p>
         </div>

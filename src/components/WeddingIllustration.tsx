@@ -17,7 +17,7 @@ const WeddingIllustration = ({ lang = "en" }: WeddingIllustrationProps) => {
           }`}
         >
           <div className="flex justify-center mb-4 sm:mb-5 md:mb-6">
-            <span className="text-ink/60 text-2xl sm:text-3xl md:text-4xl font-script tracking-widest">The Celebration</span>
+            <span className="text-ink/60 text-2xl sm:text-3xl md:text-4xl font-script tracking-widest">The Wedding</span>
           </div>
           <div className="h-[0.5px] w-16 sm:w-18 bg-ink/30 mx-auto"></div>
         </div>
@@ -37,7 +37,7 @@ const WeddingIllustration = ({ lang = "en" }: WeddingIllustrationProps) => {
 
             <img
               src="/wedding.png"
-              alt="Wedding Celebration"
+              alt="Wedding"
               className="w-full h-full object-cover transition-all duration-[3000ms] group-hover:scale-105 filter grayscale-[0.1] sepia-[0.05] contrast-[0.95] brightness-[1.02]"
             />
 
