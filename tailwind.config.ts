@@ -55,6 +55,14 @@ export default {
         ink: "hsl(var(--ink))",
         "archival-paper": "hsl(var(--archival-paper))",
         "dusty-blue": "hsl(var(--dusty-blue))",
+        // Traditional Indian Wedding Colors
+        marigold: "hsl(var(--marigold))",
+        "deep-red": "hsl(var(--deep-red))",
+        "leaf-green": "hsl(var(--leaf-green))",
+        "warm-cream": "hsl(var(--warm-cream))",
+        "bright-gold": "hsl(var(--bright-gold))",
+        "saffron": "hsl(var(--saffron))",
+        "turmeric": "hsl(var(--turmeric))",
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
@@ -71,6 +79,10 @@ export default {
         serif: ['var(--font-serif)', 'serif'],
         calligraphy: ['var(--font-calligraphy)', 'serif'],
         sans: ['var(--font-sans)', 'sans-serif'],
+        // Traditional Indian Wedding Fonts
+        devanagari: ['var(--font-devanagari)', 'serif'],
+        traditional: ['var(--font-traditional)', 'serif'],
+        elegant: ['var(--font-elegant)', 'serif'],
       },
       borderRadius: {
         lg: "var(--radius)",
