@@ -76,7 +76,7 @@ const TempleBackgroundSection = ({ lang = "en" }: TempleBackgroundSectionProps) 
             {lang === "en" ? "Sacred Union" : "పవిత్ర సంయోగం"}
           </h2>
           <p className="font-cinzel text-xs md:text-sm tracking-[0.3em] md:tracking-[0.4em] uppercase text-ink/60 font-light">
-            {lang === "en" ? "Blessed by Tradition" : "परंપरा द्वारा आशीर्वादित"}
+            {lang === "en" ? "Blessed by Tradition" : "సంప్రదాయంతో ఆశీర్వదించింది"}
           </p>
         </div>
 

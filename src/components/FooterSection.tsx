@@ -24,7 +24,7 @@ const FooterSection = ({ lang }: FooterSectionProps) => {
           <p
             className={`font-playfair text-lg sm:text-2xl md:text-3xl italic text-ink/60 transition-all duration-1000 delay-200 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"} text-balance px-4 leading-relaxed`}
           >
-            {lang === "en" ? "We can't wait to celebrate with you!" : "మీతో కలిసి జరుపుకోవడానికి మేము ఎదురుచూస్తున్నాము!"}
+            {lang === "en" ? "We cannot wait to celebrate with you!" : "మీతో కలిసి జరుపుకోవడానికి మేము ఎదురుచూస్తున్నాము!"}
           </p>
 
           <div className={`space-y-3 sm:space-y-4 transition-all duration-1000 delay-400 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
