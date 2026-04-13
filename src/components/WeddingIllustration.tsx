@@ -17,7 +17,7 @@ const WeddingIllustration = ({ lang = "en" }: WeddingIllustrationProps) => {
           }`}
         >
           <div className="flex justify-center mb-4 sm:mb-5 md:mb-6">
-            <span className="text-ink/60 text-2xl sm:text-3xl md:text-4xl font-script tracking-widest">The Wedding</span>
+            <span className="text-ink/60 text-xl sm:text-2xl md:text-3xl font-script tracking-widest">The Wedding</span>
           </div>
           <div className="h-[0.5px] w-16 sm:w-18 bg-ink/30 mx-auto"></div>
         </div>

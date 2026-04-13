@@ -71,7 +71,7 @@ const EventsSection = ({ lang }: EventsSectionProps) => {
                     </p>
                     <div className="h-[0.5px] flex-grow bg-ink/20 hidden md:block"></div>
                   </div>
-                  <h3 className="font-script text-4xl sm:text-5xl md:text-9xl text-ink leading-[0.8] opacity-90 transition-all duration-500 hover:opacity-100 text-balance">
+                  <h3 className="font-script text-xl sm:text-2xl md:text-4xl text-ink leading-[1.2] opacity-90 transition-all duration-500 hover:opacity-100 text-balance py-2">
                     {t(item.title, lang)}
                   </h3>
                 </div>
