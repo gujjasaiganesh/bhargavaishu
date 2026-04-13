@@ -49,8 +49,8 @@ export const invitation = {
         illustration: "/Haldi.png",
         mapsLink: "https://maps.app.goo.gl/3PrZ9JFr9zoR1Aj18?g_st=ic",
         attire: {
-          label: { en: "Attire Guide", te: "దుస్తుల గైడ్" },
-          description: { en: "Pastel Pink", te: "పాస్టెల్ పింక్" },
+          label: { en: "దుస్తుల మార్గదర్శి", te: "దుస్తుల మార్గదర్శి" },
+          description: { en: "పాస్టెల్ గులాబీ", te: "పాస్టెల్ గులాబీ" },
           colors: ["#F8C8DC", "#FADADD", "#F49AC2"]
         }
       },
@@ -64,8 +64,8 @@ export const invitation = {
         illustration: "/Sangeeth.png",
         mapsLink: "https://maps.app.goo.gl/3PrZ9JFr9zoR1Aj18?g_st=ic",
         attire: {
-          label: { en: "Attire Guide", te: "డ్రెస్ కోడ్" },
-          description: { en: "Dark & Blingy", te: "డార్క్ & బ్లింగీ" },
+          label: { en: "దుస్తుల మార్గదర్శి", te: "దుస్తుల మార్గదర్శి" },
+          description: { en: "చీకటి మరియు మెరుపులు", te: "చీకటి మరియు మెరుపులు" },
           colors: ["#1A1A1A", "#C0C0C0", "#FFD700"]
         }
       },
